@@ -1,0 +1,391 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #fffaf3;
+    --pink: #f8dce3;
+    --dark-pink: #b65e79;
+    --gold: #c99a45;
+    --dark: #44313a;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #fff8f0,
+        #fce8ed,
+        #fffaf3
+    );
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 50px 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.top-label {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid var(--gold);
+    border-radius: 30px;
+    color: var(--dark-pink);
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.graduation-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.small-heading {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 8vw, 78px);
+    color: var(--dark-pink);
+    margin: 15px 0;
+}
+
+.gold-line {
+    width: 100px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.passer-title {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.passer-title span {
+    color: var(--gold);
+    font-size: 40px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #8c707a;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.photo-section {
+    margin: 45px auto;
+}
+
+.photo-frame {
+    width: 280px;
+    height: 340px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    background: white;
+    border: 2px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(130, 76, 91, 0.17);
+    border-radius: 160px 160px 20px 20px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 150px 150px 12px 12px;
+}
+
+.photo-decoration {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    color: var(--gold);
+    font-size: 35px;
+    z-index: 2;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 250, 243, 0.92);
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: var(--dark-pink);
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.name-section {
+    margin: 40px 0;
+}
+
+.name-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(27px, 5vw, 42px);
+    color: var(--dark-pink);
+    letter-spacing: 1px;
+}
+
+.university {
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.achievement span {
+    color: var(--gold);
+    font-size: 20px;
+}
+
+.message-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #efd9c3;
+    border-radius: 20px;
+    padding: 40px 35px;
+    margin: 45px auto;
+    max-width: 650px;
+    box-shadow: 0 10px 35px rgba(130, 76, 91, 0.08);
+}
+
+.quote-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    line-height: 0.7;
+    color: var(--gold);
+}
+
+.message-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--dark-pink);
+    margin: 15px 0 25px;
+}
+
+.message-card p {
+    color: #76636b;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.message-card .final-message {
+    color: var(--dark-pink);
+    font-weight: 600;
+}
+
+.heart {
+    color: #d47d92;
+    font-size: 25px;
+    margin-top: 15px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.footer-line {
+    width: 70px;
+    height: 2px;
+    background: var(--gold);
+    margin: 30px auto;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-pink);
+    letter-spacing: 3px;
+    font-size: 19px;
+}
+
+footer p {
+    color: #8c707a;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.footer-university {
+    letter-spacing: 3px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.footer-stars {
+    margin: 20px;
+    font-size: 22px;
+}
+
+.copyright {
+    font-size: 10px;
+    opacity: 0.7;
+    padding-bottom: 30px;
+}
+
+/* Background decorations */
+
+.background-decoration span {
+    position: fixed;
+    color: rgba(201, 154, 69, 0.25);
+    font-size: 30px;
+    animation: float 5s infinite ease-in-out;
+}
+
+.background-decoration span:nth-child(1) {
+    top: 15%;
+    left: 8%;
+}
+
+.background-decoration span:nth-child(2) {
+    top: 40%;
+    right: 8%;
+}
+
+.background-decoration span:nth-child(3) {
+    bottom: 15%;
+    left: 12%;
+}
+
+.background-decoration span:nth-child(4) {
+    top: 70%;
+    right: 12%;
+}
+
+.background-decoration span:nth-child(5) {
+    top: 10%;
+    right: 20%;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+/* Confetti */
+
+#confetti {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Celebration button */
+
+#celebrateBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: var(--dark-pink);
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(182, 94, 121, 0.3);
+    z-index: 20;
+    transition: 0.3s;
+}
+
+#celebrateBtn:hover {
+    background: #94445f;
+    transform: translateY(-4px);
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 35px 18px;
+    }
+
+    .top-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .passer-title {
+        font-size: 19px;
+    }
+
+    .passer-title span {
+        font-size: 32px;
+    }
+
+    .photo-frame {
+        width: 240px;
+        height: 300px;
+    }
+
+    .message-card {
+        padding: 30px 22px;
+    }
+
+    .message-card p {
+        font-size: 13px;
+    }
+
+    .achievement {
+        font-size: 9px;
+        gap: 8px;
+    }
+
+    #celebrateBtn {
+        bottom: 15px;
+        right: 15px;
+        padding: 11px 17px;
+        font-size: 12px;
+    }
+}
